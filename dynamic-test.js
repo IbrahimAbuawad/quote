@@ -1,5 +1,20 @@
+
+alert("ALERT ALERT the function will be in button in the form area");
 let cat = prompt("how many cat pic do you want");
 let chColor = prompt("choose text color for FORM( blue , red , green )");
+
+let container = document.getElementById("container");
+let lowerColor = chColor.toLowerCase();
+
+
+if (lowerColor == "blue" || lowerColor == "red" || lowerColor == "green") {
+    container.style.color = lowerColor;
+}
+else {
+    alert("you put wrong color");
+}
+
+
 let Name = prompt("whats your Name");
 let age = prompt("whats your Age");
 
@@ -24,19 +39,33 @@ for (i = 0; i < cat; i++) {
     imgDiv.appendChild(a);
 
 };
-let container = document.getElementById("container");
-let lowerColor = chColor.toLowerCase();
 
-if (lowerColor == "blue" || lowerColor == "red" || lowerColor == "green") {
-    container.style.color = lowerColor;
+
+//Function lab 6a ...............................................
+
+let nameForm = document.forms["myform"]["nameForm"];
+let emailForm = document.forms["myform"]["emailForm"];
+let commentArea = document.forms["myform"]["commentArea"];
+
+function showInf() {
+    if (emailForm.value == "" || nameForm.value == "") {
+
+        alert("please fill the form");
+
+        return false;
+
+    }
+    else {
+        for (i = 1; i <= 2; i++) {
+
+            alert("this is LOOP Number " + i + " : your email is " + emailForm.value + " and your name is " + nameForm.value);
+        
+        }
+        emailForm.value = "";
+        nameForm.value = "";
+        commentArea.value = "";
+    }
+
 }
-else {
-    alert("you put wrong color");
-}
 
-
-function returnColor() {
-
-    container.style.color = "black";
-}
 
