@@ -1,28 +1,109 @@
-body{
+*{
 box-sizing: border-box;
+transition: all .3s ease-in-out;
+}
+#header{
+    background-image: url("https://www.itl.cat/pngfile/big/73-733836_background-blank-book-bindings-black-and-white-aesthetic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    margin:0px 0px;
+    padding: 100px;
+}
+#header h1{
+    border-top: 5px solid #28282a;
+    border-bottom: 5px solid #28282a;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    
+}
+.clear{
+    clear: both;
+}
+li{
+    list-style: none;
+    display: inline;
+    margin:0 20px;
+    color: white;
+   
+}
+nav{
+    background-color: #252f31;
+    
+    padding: 20px 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: green;
+    
+    
 }
 #container{
     margin: 20px auto;
     border: 1px solid black;
-    background-color: cornsilk;
-    float: left;
+    background-color: #252F31;
+    
     
 }
 button {
-    padding :10px 10px;
+    padding :10px 40px;
     margin: 10px auto;
+    background-color: #e0dfdf;
+}
+button:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+   
 }
 input{
     width: 300px;
     padding: 5px 5px;
 }
-img{
-   
-    width: 100px;
-    height: 100px;
-    margin: 20px 2px;
-    
-}
+
 footer{
 clear: both;
+}
+div h5{
+    float:left;
+    width: 50%;
+    font-size: larger;
+}
+div img{
+    float: right;
+    width: 40%;
+    height: 30%;
+    margin-bottom: 10px;
+    
+
+}
+#cont_image{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+ 
+    float: none;
+   
+
+}
+#imgDiv img{
+    margin-right: 20px;
+    float: none;
+}
+input{
+background-color: #4b5557;
+color:#ccc7bd;
+border: none;
+}
+textarea{
+    background-color: #4b5557;
+    color:#ccc7bd;
+    border: none;
+}
+label{
+    color:#ccc7bd;
 }

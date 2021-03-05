@@ -34,8 +34,10 @@ while (lowerOrder != 'coffee' && lowerOrder != 'tea') {
 let imgDiv = document.getElementById('imgDiv');
 for (i = 0; i < cat; i++) {
     let a = document.createElement('img');
-    a.setAttribute('src', "https://www.catbreedslist.com/uploads/allimg/cat-pictures/Nebelung-1.jpg");
-
+    
+    a.setAttribute('src', "https://image.freepik.com/free-vector/book-mockup_1017-6282.jpg");
+    a.setAttribute('width', '50px');
+    a.setAttribute('height', '50px');
     imgDiv.appendChild(a);
 
 };

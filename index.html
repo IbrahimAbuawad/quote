@@ -10,37 +10,57 @@
 
 <body style="text-align: center;">
     <header>
-        <h1>Amazing Quotes</h1>
-        <h4>the link of github to my teammate who help me</h4>
-        <a href="https://mohammadaltamimi98.github.io/wednesdaylab/" style="text-decoration:none;">Mohammed
-            Al-tamimi</a>
+        <div id="header">
+            <h1>Amazing Quotes</h1>
+        </div>
+        <div>
+            <nav>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Favorite</a></li>
+                <li><a href="/">Photos</a></li>
+                <li><a href="/">About us</a></li>
+            </nav>
+        </div>
+
     </header>
     <main>
         <h3>Some Quotes that i like personally</h3>
         <div>
             <h5 style="color: #ff6347;">“Be yourself; everyone else is already taken.”
                 ― Oscar Wilde</h5>
-            <img src="https://images.gr-assets.com/authors/1521044377p2/3565.jpg" />
+            <img class="quoteImg" src="https://api.time.com/wp-content/uploads/2015/05/wilde.jpeg?quality=85&w=650&h=628&crop=1" />
         </div>
+        <div class="clear"></div>
         <div>
-            <h5 style="color: hsl(0, 68%, 42%);">“I'm selfish, impatient and a little insecure. I make mistakes, I am out of
+            <h5 style="color: hsl(0, 68%, 42%);">“I'm selfish, impatient and a little insecure. I make mistakes, I am
+                out of
                 control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't
                 deserve me at my best.”
                 ― Marilyn Monroe
             </h5>
-            <img src="https://images.gr-assets.com/quotes/1511992603p2/8630.jpg" />
+            <img class="quoteImg" src="https://cdn-image.departures.com/sites/default/files/1572465327/header-marilyn-monroe-1953-MONROE1019.jpg" />
+            <div class="clear"></div>
         </div>
         <div>
-            <h5 style="color: rgb(0, 0, 255);">“Two things are infinite: the universe and human stupidity; and I'm not sure about
+            <h5 style="color: rgb(0, 0, 255);">“Two things are infinite: the universe and human stupidity; and I'm not
+                sure about
                 the universe.”
                 ― Albert Einstein</h5>
-            <img src="https://images.gr-assets.com/authors/1429114964p2/9810.jpg">
+            <img class="quoteImg" src="https://images.twinkl.co.uk/tw1n/image/private/t_630/u/ux/albert-einstein-1933340-1920_ver_1.jpg">
         </div>
+        <div class="clear"></div>
+        <div id="cont_image">
+        <div id="imgDiv">
+
+        </div>
+    </div>
+    </main>
+    <footer>
         <div id="container">
-            <form name="myform" >
+            <form name="myform">
                 <label>Name</label>
                 <br>
-                <input type="text" placeholder="put your Name here" name="nameForm"  />
+                <input type="text" placeholder="put your Name here" name="nameForm" />
                 <br>
                 <label>Email</label>
                 <br>
@@ -51,17 +71,12 @@
                 <textarea rows="15" cols="50" name="commentArea"></textarea>
                 <br>
             </form>
-            
+
             <button onclick="return showInf()">Submit</button>
 
         </div>
 
-        <div id="imgDiv">
-
-        </div>
-    </main>
-    <footer>
-        <p>CopyRight&copy;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IbrahimAbuawad</p>
+        
     </footer>
 
     <script src="dynamic-test.js"></script>
